@@ -1,0 +1,157 @@
+#container {
+  margin-left: 100px;
+  margin-right: 100px;
+}
+nav {
+  height: 70px;
+  border-bottom: 1px solid;
+  border-color: hsl(220, 14%, 75%);
+}
+nav {
+  height: 70px;
+  align-items: center;
+  display: flex;
+  justify-content: space-between;
+}
+#menu-left {
+  height: 100%;
+  display: flex;
+}
+#hamburger {
+  display: none;
+}
+#logo {
+  margin-top: auto;
+  margin-bottom: auto;
+}
+nav ul {
+  margin-top: 0px;
+  margin-bottom: 0px;
+  list-style-type: none;
+  text-align: center;
+}
+nav li {
+  display: inline-block;
+  height: 100%;
+  line-height: 70px;
+  margin-left: 25px;
+  font-family: "Kumbh Sans", "sans-serif";
+  color: hsl(220, 14%, 75%);
+  font-size: 16px;
+}
+nav li:hover {
+  box-sizing: border-box;
+  color: black;
+  border-bottom: 5px solid;
+  border-color: hsl(26, 100%, 55%);
+}
+#menu-right {
+  align-items: center;
+  height: 25px;
+  display: flex;
+}
+#avatar {
+  margin-left: 30px;
+  background-image: url("../../images/image-avatar.png");
+  background-size: cover;
+  height: 40px;
+  width: 40px;
+}
+#avatar:hover {
+  box-sizing: border-box;
+  border-radius: 30px;
+  border: 1px solid;
+  border-color: hsl(26, 100%, 55%);
+}
+#item-view {
+  margin: 35px;
+  display: flex;
+}
+#display-large {
+  border-radius: 15px;
+  width: 500px;
+  margin: 35px;
+}
+#display-thumbnail {
+  width: 500px;
+  margin-top: 0px;
+  margin-left: 35px;
+  margin-right: 35px;
+  padding: 0px;
+  align-items: center;
+  display: flex;
+  justify-content: space-between;
+  list-style-type: none;
+}
+#display-thumbnail li {
+  width: 100px;
+}
+#display-thumbnail img {
+  width: 100%;
+  border-radius: 10px;
+}
+#product-info {
+  font-size: 16px;
+  font-family: "Kumbh Sans", "sans-serif";
+  margin: 35px;
+}
+#brand-name {
+  font-weight: bold;
+  color: hsl(26, 100%, 55%);
+}
+#discount-badge {
+  height: 30px;
+  font-size: 16px;
+  vertical-align: middle;
+  color: hsl(26, 100%, 55%);
+  background-color: hsl(25, 100%, 94%);
+  border-radius: 10px;
+}
+#price-before {
+  color: hsl(220, 14%, 75%);
+  text-decoration:line-through;
+}
+#cart-options {
+  justify-content: space-between;
+  width: 100%;
+  display: flex;
+}
+#quantity-selector {
+  flex-grow: 1;
+  background-color: hsl(223, 64%, 98%);
+  border-radius: 15px;
+  display: flex;
+  margin-right: 15px;
+}
+#decrement {
+  height: 50px;
+  width: 35px;
+  background-image: url("../../images/icon-minus.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  border: none;
+}
+#quantity {
+  flex-grow: 3;
+  display: inline-block;
+  text-align: center;
+  background-color: hsl(223, 64%, 98%);
+  height: 50px;
+  border: none;
+}
+#increment {
+  height: 50px;
+  width: 35px;
+  background-image: url("../../images/icon-plus.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  border: none;
+}
+#add-cart {
+  align-items: center;
+  flex-grow: 3;
+  border-radius: 15px;
+  color: hsl(0, 0%, 100%);
+  text-align: center;
+  background-color: hsl(26, 100%, 55%);
+}
