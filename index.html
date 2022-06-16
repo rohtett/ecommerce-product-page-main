@@ -36,8 +36,10 @@
       </div>
       <div id="menu-right">
         <a href="#"><img src="images/icon-cart.svg"></a>
-        <a href="#"><div id="avatar"></a>
-        </div>
+        <a href="#">
+          <div id="avatar">
+          </div>
+        </a>
       </div>
     </nav>
     <div id="item-view">
@@ -58,34 +60,48 @@
           </li>
         </ul>
       </div>
-      <div id="product-info">
-        <p id="brand-name">SNEAKER COMPANY</p>
-        <h1> Fall Limited Edition Sneakers</h1>
-        <p>These low-profile sneakers are your perfect casual wear companion. Featuring a
-        durable rubber outer sole, they’ll withstand everything the weather can offer.</p>
-        <div id="price">
-          <h2>
-            $125.00
-            <span id="discount-badge">50%</span>
-          </h2>
-          <h4 id="price-before">$250.00</h4>
-        </div>
-        <div id="cart-options">
-          <div id="quantity-selector">
-            <div id="decrement" class="quantity">
+      <div id="product">
+        <div>
+          <p id="brand-name">SNEAKER COMPANY</p>
+          <h1> Fall Limited Edition Sneakers</h1>
+          <p id="product-info">These low-profile sneakers are your perfect casual wear companion. Featuring a
+          durable rubber outer sole, they’ll withstand everything the weather can offer.</p>
+          <div>
+            <div id="price">
+              $125.00
+              <span id="discount-badge">50%</span>
             </div>
-            <input id="quantity" value="1">
-            <div id="increment" class="quantity">
-            </div>
+            <p id="price-before">$250.00</p>
           </div>
-          <div id="add-cart"><img src="images/icon-cart.svg">Add to cart</div>
+          <div id="cart-options">
+            <div id="quantity-selector">
+              <a href="#">
+                <div id="decrement">
+                </div>
+              </a>
+              <input id="quantity" value="1">
+              <a href="#">
+                <div id="increment">
+                </div>
+              </a>
+            </div>
+            <a id="add-cart" href="#">
+              <svg mlns="http://www.w3.org/2000/svg">
+                <image href="images/icon-cart.svg">
+              </svg>
+              Add to cart
+            </a>
+          </div>
         </div>
       </div>
     </div>
-    <div class="attribution">
-      Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
-      Coded by <a href="#">Rohit Naidu</a>.
-    </div>
+    <script src="static/js/index.js"></script>
   </div>
 </body>
+<footer>
+  <div>
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
+    Coded by <a href="#">Rohit Naidu</a>.
+  </div>
+</footer>
 </html>

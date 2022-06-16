@@ -1,6 +1,6 @@
 #container {
-  margin-left: 100px;
-  margin-right: 100px;
+  margin-left: 150px;
+  margin-right: 150px;
 }
 nav {
   height: 70px;
@@ -36,7 +36,7 @@ nav li {
   line-height: 70px;
   margin-left: 25px;
   font-family: "Kumbh Sans", "sans-serif";
-  color: hsl(220, 14%, 75%);
+  color: hsl(219, 9%, 45%);
   font-size: 16px;
 }
 nav li:hover {
@@ -64,16 +64,17 @@ nav li:hover {
   border-color: hsl(26, 100%, 55%);
 }
 #item-view {
-  margin: 35px;
+  margin: 50px;
   display: flex;
 }
 #display-large {
   border-radius: 15px;
-  width: 500px;
+  width: 400px;
   margin: 35px;
+  margin-bottom: 15px;
 }
 #display-thumbnail {
-  width: 500px;
+  width: 400px;
   margin-top: 0px;
   margin-left: 35px;
   margin-right: 35px;
@@ -84,55 +85,77 @@ nav li:hover {
   list-style-type: none;
 }
 #display-thumbnail li {
-  width: 100px;
+  width: 90px;
 }
 #display-thumbnail img {
   width: 100%;
   border-radius: 10px;
 }
-#product-info {
+.thumbnail-selected {
+  opacity: 0.5;
+  border: 3px solid;
+  border-color: hsl(26, 100%, 55%);
+  box-sizing: border-box;
+}
+#product {
+  display:flex;
+  align-items: center;
   font-size: 16px;
   font-family: "Kumbh Sans", "sans-serif";
   margin: 35px;
+}
+#product-info {
+  color: hsl(219, 9%, 45%);
 }
 #brand-name {
   font-weight: bold;
   color: hsl(26, 100%, 55%);
 }
+#price {
+  font-size: 1.2em;
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+}
 #discount-badge {
-  height: 30px;
-  font-size: 16px;
-  vertical-align: middle;
+  margin-left: 5px;
+  padding-left: 5px;
+  padding-right: 5px;
+  font-size: 0.75em;
   color: hsl(26, 100%, 55%);
   background-color: hsl(25, 100%, 94%);
-  border-radius: 10px;
+  border-radius: 5px;
 }
 #price-before {
+  font-weight: bold;
+  font-size: 0.9em;
   color: hsl(220, 14%, 75%);
   text-decoration:line-through;
 }
 #cart-options {
+  flex-wrap: wrap;
   justify-content: space-between;
   width: 100%;
   display: flex;
 }
 #quantity-selector {
-  flex-grow: 1;
+  justify-content: space-between;
+  margin-top: 15px;
   background-color: hsl(223, 64%, 98%);
-  border-radius: 15px;
+  border-radius: 10px;
   display: flex;
-  margin-right: 15px;
 }
 #decrement {
+  min-width: 35px;
   height: 50px;
-  width: 35px;
   background-image: url("../../images/icon-minus.svg");
   background-repeat: no-repeat;
   background-position: center;
   border: none;
 }
 #quantity {
-  flex-grow: 3;
+  width: 80%;
+  font-weight: bold;
   display: inline-block;
   text-align: center;
   background-color: hsl(223, 64%, 98%);
@@ -140,18 +163,59 @@ nav li:hover {
   border: none;
 }
 #increment {
+  min-width: 35px;
   height: 50px;
-  width: 35px;
   background-image: url("../../images/icon-plus.svg");
   background-repeat: no-repeat;
   background-position: center;
   border: none;
 }
 #add-cart {
+  width: 300px;
+  margin-top: 15px;
+  height: 50px;
+  display: flex;
+  justify-content: center;
   align-items: center;
-  flex-grow: 3;
-  border-radius: 15px;
-  color: hsl(0, 0%, 100%);
+  border-radius: 10px;
   text-align: center;
   background-color: hsl(26, 100%, 55%);
+  color: hsl(0, 0%, 100%);
+  text-decoration: none;
+}
+svg {
+  margin-right: 5px;
+  height: 16px;
+  width: 16px;
+}
+svg image {
+  fill: hsl(0, 0%, 100%);
+  width: 100%;
+  height: 100%;
+}
+footer {
+  text-align: center;
+}
+
+@media only screen and (min-width: 992px) {
+  #container {
+  }
+}
+@media only screen and (min-width: 1200px) {
+  #container {
+    margin-left: 75px;
+    margin-right: 75px;
+  }
+  #quantity-selector {
+    width: 100%;
+  }
+  #add-cart {
+    width: 100%;
+  }
+}
+@media only screen and (min-width: 1400px) {
+  #container {
+    margin-left: 100px;
+    margin-right: 100px;
+  }
 }
