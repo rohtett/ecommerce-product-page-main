@@ -1,3 +1,14 @@
+#modalBg {
+  display: none;
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  height: 100vh;
+  width: 100%;
+  background-color: hsl(0, 0%, 0%);
+  opacity: 0.75;
+  z-index: 2;
+}
 nav {
   height: 70px;
   border-bottom: 1px solid;
@@ -12,6 +23,35 @@ nav {
 #menu-left {
   height: 100%;
   display: flex;
+}
+#hamburger {
+  z-index: 4;
+  align-self: center;
+  list-style-type: none;
+  padding: 20px;
+}
+#hamburger-menu {
+  padding-left: 30px;
+  z-index: 3;
+  left: 0px;
+  top: 0px;
+  width: 200px;
+  padding-top: 80px;
+  margin-top: 0px;
+  list-style-type: none;
+  background-color: hsl(0, 0%, 100%);
+  height: 100%;
+  position: fixed;
+  display: none;
+}
+#hamburger-menu li {
+  padding-bottom: 20px;
+}
+#hamburger-menu a {
+  font-weight: bold;
+  color: hsl(0, 0%, 0%);
+  text-decoration: none;
+  font-family: "Kumbh Sans", "sans-serif";
 }
 #menu {
   display: none;
@@ -50,35 +90,14 @@ nav {
   width: 100%;
 }
 #display-thumbnail {
-  width: 400px;
-  margin-top: 0px;
-  margin-left: 35px;
-  margin-right: 35px;
-  padding: 0px;
-  align-items: center;
   display: none;
-  justify-content: space-between;
-  list-style-type: none;
-}
-#display-thumbnail li {
-  width: 90px;
-}
-#display-thumbnail img {
-  width: 100%;
-  border-radius: 10px;
-}
-.thumbnail-selected {
-  opacity: 0.5;
-  border: 3px solid;
-  border-color: hsl(26, 100%, 55%);
-  box-sizing: border-box;
 }
 #product {
   display:flex;
   align-items: center;
   font-size: 16px;
   font-family: "Kumbh Sans", "sans-serif";
-  margin: 35px;
+  margin: 20px;
 }
 #product-info {
   color: hsl(219, 9%, 45%);
@@ -86,6 +105,10 @@ nav {
 #brand-name {
   font-weight: bold;
   color: hsl(26, 100%, 55%);
+}
+#mobile-price {
+  display: flex;
+  justify-content: space-between;
 }
 #price {
   font-size: 1.2em;
@@ -171,7 +194,10 @@ svg image {
   height: 100%;
 }
 footer {
+  font-size: 10px;
   text-align: center;
+  position: relative;
+  bottom: -100px;
 }
 
 @media only screen and (min-width: 768px) {
@@ -207,7 +233,6 @@ footer {
   }
   #item-view {
     display: flex;
-    margin: 0px;
   }
   #product-images {
     display: inline;
@@ -220,15 +245,31 @@ footer {
     margin-bottom: 15px;
   }
   #display-thumbnail {
+    width: 400px;
+    margin-top: 0px;
     margin-left: 35px;
+    margin-right: 35px;
+    padding: 0px;
+    align-items: center;
+    justify-content: space-between;
+    list-style-type: none;
     display: flex;
+  }
+  #display-thumbnail li {
+    width: 90px;
+  }
+  #display-thumbnail img {
+    width: 100%;
+    border-radius: 10px;
+  }
+  .thumbnail-selected {
+    opacity: 0.5;
+    border: 3px solid;
+    border-color: hsl(26, 100%, 55%);
+    box-sizing: border-box;
   }
   #product {
     margin: 20px;
-  }
-  #mobile-price {
-    display: flex;
-    justify-content: space-between;
   }
 }
 
@@ -241,7 +282,10 @@ footer {
     padding-left: 20px;
   }
   #product {
-    margin: 20px;
+    margin: 25px;
+  }
+  #mobile-price {
+    display: inline;
   }
   #quantity-selector {
     width: 100px;
@@ -257,6 +301,9 @@ footer {
     margin-left: 100px;
     margin-right: 100px;
   }
+  #product {
+    margin: 30px;
+  }
   #add-cart {
     width: 225px;
   }
@@ -266,6 +313,9 @@ footer {
   #container {
     margin-left: 150px;
     margin-right: 150px;
+  }
+  #product {
+    margin: 35px;
   }
   #add-cart {
     width: 320px;
