@@ -37,8 +37,6 @@
           </div>
         </a>
       </div>
-    </nav>
-    <div id="item-view">
       <ul id="hamburger-menu">
         <a href="#"><li>Collections</li></a>
         <a href="#"><li>Men</li></a>
@@ -46,37 +44,65 @@
         <a href="#"><li>About</li></a>
         <a href="#"><li>Contact</li></a>
       </ul>
-      <div id="product-images">
-        <img id="display-large" src="images/image-product-1.jpg">
-        <ul id="display-thumbnail">
-          <li>
-            <a href="#"><img src="images/image-product-1-thumbnail.jpg"></a>
-          </li>
-          <li>
-            <a href="#"><img src="images/image-product-2-thumbnail.jpg"></a>
-          </li>
-          <li>
-            <a href="#"><img src="images/image-product-3-thumbnail.jpg"></a>
-          </li>
-          <li>
-            <a href="#"><img src="images/image-product-4-thumbnail.jpg"></a>
-          </li>
-        </ul>
+    </nav>
+    <div id="cart-holder">
+      <div id="cart">
+        <div id="cart-header">
+          Cart
+        </div>
+        <div id="cart-content">
+          <div id="cart-item">
+            <img src="">
+            <div>
+
+            </div>
+          </div>
+          Your cart is empty.
+        </div>
+        <div id="checkout">
+          Checkout
+        </div>
       </div>
-      <div id="product">
+    </div>
+    <div id="item-view">
+      <aside>
+        <section id="display-large">
+          <img src="images/image-product-1.jpg">
+        </section>
+        <section id="display-thumbnail">
+          <ul>
+            <li>
+              <a href="#"><img src="images/image-product-1-thumbnail.jpg" class="thumbnail-selected"></a>
+            </li>
+            <li>
+              <a href="#"><img src="images/image-product-2-thumbnail.jpg"></a>
+            </li>
+            <li>
+              <a href="#"><img src="images/image-product-3-thumbnail.jpg"></a>
+            </li>
+            <li>
+              <a href="#"><img src="images/image-product-4-thumbnail.jpg"></a>
+            </li>
+          </ul>
+        </section>
+      </aside>
+      <main>
         <div>
-          <p id="brand-name">SNEAKER COMPANY</p>
-          <h1> Fall Limited Edition Sneakers</h1>
-          <p id="product-info">These low-profile sneakers are your perfect casual wear companion. Featuring a
-          durable rubber outer sole, they’ll withstand everything the weather can offer.</p>
-          <div id="mobile-price">
+          <article>
+            <p id="brand-name">SNEAKER COMPANY</p>
+            <h1> Fall Limited Edition Sneakers</h1>
+            <p id="product-info">These low-profile sneakers are your perfect casual wear companion. Featuring a
+            durable rubber outer sole, they’ll withstand everything the weather can offer.</p>
+          </article>
+          <section id="mobile-price">
             <div id="price">
-              $125.00
+              <span id="final-price">
+                $125.00</span>
               <span id="discount-badge">50%</span>
             </div>
             <p id="price-before">$250.00</p>
-          </div>
-          <div id="cart-options">
+          </section>
+          <section id="cart-options">
             <div id="quantity-selector">
               <a href="#">
                 <div id="decrement">
@@ -94,9 +120,9 @@
               </svg>
               Add to cart
             </a>
-          </div>
+          </section>
         </div>
-      </div>
+      </main>
     </div>
     <div id="modalBg">
     </div>
