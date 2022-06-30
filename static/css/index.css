@@ -84,10 +84,9 @@ nav {
   font-family: "Kumbh Sans", "sans-serif";
 }
 #cart-holder {
-  display: flex;
+  display: none;
   position: absolute;
   width: 100%;
-  right: 20px;
 }
 #cart {
   width: 100%;
@@ -108,11 +107,48 @@ nav {
   border-color: hsl(220, 14%, 75%);
 }
 #cart-content {
+  padding-top: 10px;
   color: hsl(220, 14%, 75%);
   min-height: 200px;
   text-align: center;
   font-family: "Kumbh Sans", "sans-serif";
   font-weight: bold;
+}
+.cart-item {
+  display: flex;
+  width: 100%;
+  font-family: "Kumbh Sans", "sans-serif";
+  color: hsl(0, 0%, 0%);
+  text-align: left;
+  margin-bottom: 10px;
+}
+.emptyCart {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.cartDisplay {
+  height: 50px;
+  width: 50px;
+  border-radius: 5px;
+  margin-right: 10px;
+}
+.cart-item div {
+  flex: 3;
+}
+.itemName {
+  font-weight: normal;
+  color: hsl(219, 9%, 45%);
+}
+.itemPrice {
+  font-weight: normal;
+  color: hsl(219, 9%, 45%);
+}
+.cartBin {
+  height: 15px;
+  width: 15px;
 }
 #checkout {
   display: flex;
@@ -301,6 +337,7 @@ footer {
   }
   #cart-holder {
     width: 40%;
+    right: 20px;
   }
   main, aside {
     flex: 35%;
@@ -353,6 +390,9 @@ footer {
   main, aside {
     padding: 40px;
   }
+  #brand-name {
+    margin-bottom: 50px;
+  }
 }
 
 @media only screen and (min-width: 1200px) {
@@ -370,6 +410,9 @@ footer {
   main {
     flex: 30%;
     padding: 100px;
+  }
+  #brand-name {
+    margin-bottom: 100px;
   }
 }
 
