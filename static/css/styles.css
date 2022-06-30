@@ -390,8 +390,11 @@ footer {
   main, aside {
     padding: 40px;
   }
-  #brand-name {
-    margin-bottom: 50px;
+  #cart-options {
+    flex-flow: nowrap;
+  }
+  #quantity-selector {
+    margin-right: 10px;
   }
 }
 
@@ -411,9 +414,6 @@ footer {
     flex: 30%;
     padding: 100px;
   }
-  #brand-name {
-    margin-bottom: 100px;
-  }
 }
 
 @media only screen and (min-width: 1400px) {
@@ -430,6 +430,9 @@ footer {
   }
   main {
     flex: 25%;
-    padding: 140px;
+    padding: 100px;
+  }
+  h1 {
+    font-size: 2.5em;
   }
 }
